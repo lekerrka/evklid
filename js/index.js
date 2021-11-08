@@ -17,5 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 $(function () {
   $('#accordion').accordion({
     heightStyle: 'content',
+    collapsible: true,
+    active: false,
   });
 });
