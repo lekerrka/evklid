@@ -453,8 +453,6 @@ button {
 
 .ui-tabs .ui-tabs-nav {
   margin-bottom: 45px;
-  display: flex;
-  justify-content: space-between;
 }
 
 /*активный таб*/
@@ -1078,6 +1076,11 @@ question-point_heading {
 
   .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
     margin-right: 0;
+  }
+
+  .ui-tabs .ui-tabs-nav {
+    display: flex;
+    justify-content: space-between;
   }
 
   .tabs__content {
