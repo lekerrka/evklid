@@ -410,25 +410,61 @@ button {
   line-height: 32px;
 }
 
+/*HOW-DO-WE-WORK*/
+
 .how {
   margin-bottom: 108px;
 }
 
 .how-heading {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
-.how-steps {
+.tabs__content {
   display: flex;
+}
+
+/*настройка табов*/
+
+.ui-widget.ui-widget-content,
+.ui-widget-header,
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  border: none;
+  background: transparent;
+}
+
+.ui-tabs .ui-tabs-panel,
+.ui-tabs,
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor,
+.ui-tabs .ui-tabs-nav {
+  padding: 0;
+}
+
+.ui-state-active a,
+.ui-state-active a:link {
+  color: #333;
+}
+
+.ui-widget {
+  font-family: inherit;
+}
+
+.ui-tabs .ui-tabs-nav {
   margin-bottom: 45px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.how-steps_item {
-  list-style: none;
-  margin-right: 86px;
+/*активный таб*/
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+  cursor: pointer;
 }
 
-.how-steps_iten_link {
+/*все табы*/
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+  margin-right: 80px;
   padding: 5px;
   font-weight: 400;
   font-size: 18px;
@@ -436,15 +472,15 @@ button {
   color: #333;
 }
 
-.how-steps_iten_link:hover {
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor:hover {
   color: #ff9900;
 }
 
-.how-steps_iten_link:focus {
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor:focus {
   outline: 2px solid #ff9900;
 }
 
-.how-steps_iten_link:active {
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor:active {
   color: #e1670e;
 }
 
@@ -466,7 +502,7 @@ button {
 
 .how-consulting_desc_info {
   max-width: 760px;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -474,10 +510,25 @@ button {
 
 .how-consulting_pic {
   width: 48%;
-  background-image: url(../img/how.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.pic-1 {
+  background-image: url(../img/how-1.jpg);
+}
+
+.pic-2 {
+  background-image: url(../img/how-2.jpg);
+}
+
+.pic-3 {
+  background-image: url(../img/how-3.jpg);
+}
+
+.pic-4 {
+  background-image: url(../img/how-4.jpg);
 }
 
 .how-consulting_desc_btn-1 {
@@ -1021,16 +1072,15 @@ question-point_heading {
     height: 99px;
   }
 
-  .how-steps {
-    width: 100%;
-    justify-content: space-between;
-  }
-
   .how-steps_item {
     margin-right: 0;
   }
 
-  .how-consulting {
+  .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    margin-right: 0;
+  }
+
+  .tabs__content {
     flex-direction: column-reverse;
   }
 
@@ -1237,11 +1287,11 @@ question-point_heading {
     margin-bottom: 20px;
   }
 
-  .how-steps {
+  .ui-tabs .ui-tabs-nav {
     margin-bottom: 16px;
   }
 
-  .how-steps_iten_link {
+  .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
     font-size: 14px;
     line-height: 17px;
   }

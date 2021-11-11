@@ -9,11 +9,15 @@
 
   <!--Swiper-->
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
   <!--Accordion-->
   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
 
+  <!--Tabs-->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+
+  <!--Мои стили-->
   <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -21,24 +25,24 @@
 <body>
   <header class="header">
     <div class="container header-container">
-      <button tabindex="1" class="burger_btn"></button>
+      <button class="burger_btn"></button>
       <div class="burger-menu burger-menu_hidden">
         <button class="burger-close"></button>
         <ul class="burger-nav_list">
           <li class="burger-nav_item">
-            <a tabindex="1" href="#" class="burger-nav_link">О нас</a>
+            <a href="#" class="burger-nav_link">О нас</a>
           </li>
           <li class="burger-nav_item">
-            <a tabindex="1" href="#" class="burger-nav_link">Проекты</a>
+            <a href="#" class="burger-nav_link">Проекты</a>
           </li>
           <li class="burger-nav_item">
-            <a tabindex="1" href="#" class="burger-nav_link">Этапы</a>
+            <a href="#" class="burger-nav_link">Этапы</a>
           </li>
           <li class="burger-nav_item">
-            <a tabindex="1" href="#" class="burger-nav_link">Отзывы</a>
+            <a href="#" class="burger-nav_link">Отзывы</a>
           </li>
           <li class="burger-nav_item">
-            <a tabindex="1" href="#" class="burger-nav_link">Контакты</a>
+            <a href="#" class="burger-nav_link">Контакты</a>
           </li>
         </ul>
       </div>
@@ -46,7 +50,7 @@
       <nav class="header-nav">
         <ul class="header-nav_list">
           <li class="header-nav_item">
-            <a tabindex="1" href="#" class="header-nav_link">О нас</a>
+            <a tabindex="1" href="#about" class="header-nav_link">О нас</a>
           </li>
           <li class="header-nav_item">
             <a tabindex="1" href="#" class="header-nav_link">Проекты</a>
@@ -95,7 +99,9 @@
       </div>
     </section>
 
-    <section class="about">
+    <!--О нас-->
+
+    <section class="about" id="about">
       <div class="container about-container">
         <h2 class="about-heading heading-2">О нас</h2>
         <p class="about-desc">Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных
@@ -136,46 +142,92 @@
       </div>
     </section>
 
+    <!--Как мы работаем-->
+
     <section class="how">
       <div class="container how-container">
         <h2 class="how-heading heading-2">Как мы работаем</h2>
-        <ul class="how-steps">
-          <li class="how-steps_item">
-            <a tabindex="1" class="how-steps_iten_link" href="#">1 шаг</a>
-          </li>
-          <li class="how-steps_item">
-            <a tabindex="1" class="how-steps_iten_link" href="#">2 шаг</a>
-          </li>
-          <li class="how-steps_item">
-            <a tabindex="1" class="how-steps_iten_link" href="#">3 шаг</a>
-          </li>
-          <li class="how-steps_item">
-            <a tabindex="1" class="how-steps_iten_link" href="#">4 шаг</a>
-          </li>
-        </ul>
-        <div class="how-consulting">
-          <div class="how-consulting_desc">
-            <h3 class="how-consulting_desc_heading">Проводим консультацию</h3>
-            <p class="how-consulting_desc_info">Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных
-            стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также
-            представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно
-            образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные
-            исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство,
-            нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется,
-            призваны к ответу.</p>
-            <button tabindex="1" class="how-consulting_desc_btn-1">Подробнее</button>
-            <button tabindex="1" class="how-consulting_desc_btn-2">Договор</button>
+        <div id="tabs">
+          <ul>
+            <li><a tabindex="2" href="#tabs-1">1 шаг</a></li>
+            <li><a tabindex="3" href="#tabs-2">2 шаг</a></li>
+            <li><a tabindex="4" href="#tabs-3">3 шаг</a></li>
+            <li><a tabindex="5" href="#tabs-4">4 шаг</a></li>
+          </ul>
+          <div id="tabs-1">
+            <div class="tabs__content">
+              <div class="how-consulting_desc">
+                <h3 class="how-consulting_desc_heading">Проводим консультацию</h3>
+                <p class="how-consulting_desc_info">Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных
+                стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также
+                представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно
+                образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные
+                исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство,
+                нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется,
+                призваны к ответу.</p>
+                <button tabindex="6" class="how-consulting_desc_btn-1">Подробнее</button>
+                <button tabindex="6" class="how-consulting_desc_btn-2">Договор</button>
+              </div>
+              <div class="how-consulting_pic pic-1"></div>
+            </div>
           </div>
-          <div class="how-consulting_pic"></div>
+          <div id="tabs-2">
+            <div class="tabs__content">
+              <div class="how-consulting_desc">
+                <h3 class="how-consulting_desc_heading">Составляем смету</h3>
+                <p class="how-consulting_desc_info">Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые
+                особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители
+                современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления.
+                Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты
+                целой серии независимых исследований.</p>
+                <button tabindex="6" class="how-consulting_desc_btn-1">Подробнее</button>
+                <button tabindex="6" class="how-consulting_desc_btn-2">Договор</button>
+              </div>
+              <div class="how-consulting_pic pic-2"></div>
+            </div>
+          </div>
+          <div id="tabs-3">
+            <div class="tabs__content">
+              <div class="how-consulting_desc">
+                <h3 class="how-consulting_desc_heading">Привлекаем подрядчиков</h3>
+                <p class="how-consulting_desc_info">Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса
+                профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является четким
+                доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений
+                развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях
+                системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское
+                обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.</p>
+                <button tabindex="6" class="how-consulting_desc_btn-1">Подробнее</button>
+                <button tabindex="6" class="how-consulting_desc_btn-2">Договор</button>
+              </div>
+              <div class="how-consulting_pic pic-3"></div>
+            </div>
+          </div>
+          <div id="tabs-4">
+            <div class="tabs__content">
+              <div class="how-consulting_desc">
+                <h3 class="how-consulting_desc_heading">Инспектируем все этапы работ</h3>
+                <p class="how-consulting_desc_info">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта:
+                высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и
+                богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового
+                участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей
+                деятельности позволяет.</p>
+                <button tabindex="6" class="how-consulting_desc_btn-1">Подробнее</button>
+                <button tabindex="6" class="how-consulting_desc_btn-2">Договор</button>
+              </div>
+              <div class="how-consulting_pic pic-4"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
+    <!--Часто задаваемые вопросы-->
 
     <section class="question">
       <div class="container question-container">
         <h2 class="question-heading heading-2">Часто задаваемые вопросы</h2>
         <ul id="accordion">
-          <li tabindex="1" class="question-point">
+          <li tabindex="6" class="question-point">
             <div class="question-point_heading">
               <h3>Из чего формируется конечная стоимость проекта?</h3>
               <button class="question-point_btn"></button>
@@ -195,7 +247,7 @@
               новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.
             </p>
           </li>
-          <li tabindex="1" class="question-point">
+          <li tabindex="6" class="question-point">
             <div class="question-point_heading">
               <h3>У меня есть свой проект. Сможем ли мы его доработать <span class="grey-slash">/</span>
               реализовать?</h3>
@@ -212,7 +264,7 @@
               
             </p>
           </li>
-          <li tabindex="1" class="question-point">
+          <li tabindex="6" class="question-point">
             <div class="question-point_heading">
               <h3>Я выбираю между разными компаниями. В чём ваше отличие?</h3>
               <button class="question-point_btn"></button>
@@ -227,7 +279,7 @@
               факторов.
             </p>
           </li>
-          <li tabindex="1" class="question-point">
+          <li tabindex="6" class="question-point">
             <div class="question-point_heading">
               <h3>Могу ли я делегировать вам работу <span class="grey-slash">/</span> согласование с
               подрядчиком <span class="grey-slash">/</span> организацией?</h3>
@@ -243,7 +295,7 @@
               факторов.
             </p>
           </li>
-          <li tabindex="1" class="question-point">
+          <li tabindex="6" class="question-point">
             <div class="question-point_heading">
               <h3>Могу ли я вернуть деньги на каком-либо из этапов работ? </h3>
               <button class="question-point_btn"></button>
@@ -271,45 +323,45 @@
         <img class="info-logo" src="img/Logo2.png" alt="logo">
         <ul class="info_list">
           <li class="info_list-item">
-            <a tabindex="1" href="#" class="info_list-item_link">О нас</a>
+            <a tabindex="6" href="#" class="info_list-item_link">О нас</a>
           </li>
           <li class="info_list-item">
-            <a tabindex="1" href="#" class="info_list-item_link">Проекты</a>
+            <a tabindex="6" href="#" class="info_list-item_link">Проекты</a>
           </li>
           <li class="info_list-item">
-            <a tabindex="1" href="#" class="info_list-item_link">Отзывы</a>
+            <a tabindex="6" href="#" class="info_list-item_link">Отзывы</a>
           </li>
           <li class="info_list-item">
-            <a tabindex="1" href="#" class="info_list-item_link">Договор оферты</a>
+            <a tabindex="6" href="#" class="info_list-item_link">Договор оферты</a>
           </li>
           <li class="info_list-item">
-            <a tabindex="1" href="#" class="info_list-item_link">Договор подряда</a>
+            <a tabindex="6" href="#" class="info_list-item_link">Договор подряда</a>
           </li>
           <li class="info_list-item">
-            <a tabindex="1" href="#" class="info_list-item_link">Конфиденциальность</a>
+            <a tabindex="6" href="#" class="info_list-item_link">Конфиденциальность</a>
           </li>
           <li class="info_list-item">
-            <a tabindex="1" href="#" class="info_list-item_link">Партнёрское соглашение</a>
+            <a tabindex="6" href="#" class="info_list-item_link">Партнёрское соглашение</a>
           </li>
         </ul>
         <div class="info_social">
-          <div tabindex="1" class="info_social-item fb"><a href=""></a></div>
-          <div tabindex="1" class="info_social-item vk"><a href=""></a></div>
-          <div tabindex="1" class="info_social-item inst"><a href=""></a></div>
+          <div tabindex="6" class="info_social-item fb"><a href=""></a></div>
+          <div tabindex="6" class="info_social-item vk"><a href=""></a></div>
+          <div tabindex="6" class="info_social-item inst"><a href=""></a></div>
         </div>
       </div>
       <div class="form">
         <h2 class="form-heading">Оставить заявку</h2>
         <form class="footer-form">
           <div class="footer-form_body">
-            <input tabindex="1" type="text" name="name" placeholder="Фамилия, имя и отчество*" required class="footer-form_input">
-            <input tabindex="1" type="email" name="E-mail" placeholder="E-mail*" required class="footer-form_input">
-            <textarea tabindex="1" name="message" placeholder="Сообщение" class="footer-form_input textarea" cols="30" rows="4"></textarea>
+            <input tabindex="6" type="text" name="name" placeholder="Фамилия, имя и отчество*" required class="footer-form_input">
+            <input tabindex="6" type="email" name="E-mail" placeholder="E-mail*" required class="footer-form_input">
+            <textarea tabindex="6" name="message" placeholder="Сообщение" class="footer-form_input textarea" cols="30" rows="4"></textarea>
           </div>
           <div class="footer-form_bottom">
-            <button tabindex="1" type="submit" class="footer-form_bottom-btn">Отправить данные</button>
+            <button tabindex="6" type="submit" class="footer-form_bottom-btn">Отправить данные</button>
             <label class="footer-form_bottom-checkbox">
-              <input tabindex="1" type="checkbox" required>
+              <input tabindex="6" type="checkbox" required>
               Согласен на обработку данных
             </label>
           </div>
@@ -324,6 +376,7 @@
   </footer>
 
   <!--Swiper-->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper('.swiper', {
         // Optional parameters
@@ -342,6 +395,20 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
 
+  <!--Tabs-->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $("#tabs").tabs({
+        //heightStyle: "auto"
+        //hide: {effect: "slideUp", duration: 300},
+        //show: {effect: "blind", duration: 300}
+      });   
+    });
+  </script>
+
+  <!--Мои стили-->
   <script src="js/index.js"></script>
 </body>
 
