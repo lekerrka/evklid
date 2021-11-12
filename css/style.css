@@ -185,7 +185,6 @@ button {
 }
 
 .header-search {
-  padding: 4px;
   height: 24px;
   width: 24px;
   border: none;
@@ -194,15 +193,15 @@ button {
   background-size: cover;
 }
 
-.header-nav_btn:hover {
+.header-search:hover {
   background-image: url(../img/search_hover.png);
 }
 
-.header-nav_btn:focus {
+.header-search:focus {
   outline: 2px solid #ff9900;
 }
 
-.header-nav_btn:active {
+.header-search:active {
   background-image: url(../img/search_hover.png);
   outline: none;
 }
@@ -453,6 +452,11 @@ button {
 
 .ui-tabs .ui-tabs-nav {
   margin-bottom: 45px;
+}
+
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+  content: none;
 }
 
 /*активный таб*/

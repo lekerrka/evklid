@@ -21,3 +21,16 @@ $(function () {
     active: false,
   });
 });
+
+//tabs
+
+$(function () {
+  var tabindex = 2;
+  $('ul#tabs__list li a').each(function () {
+    if (this.type != 'hidden') {
+      var $input = $(this);
+      $input.attr('tabindex', tabindex);
+      tabindex++;
+    }
+  });
+});
