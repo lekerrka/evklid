@@ -107,11 +107,11 @@ button {
   z-index: 5;
   background-color: white;
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
-
   transition: all 0.4s cubic-bezier(0.25, 0.1, 0.58, 1.01);
 }
 
 .burger-menu_hidden {
+  visibility: hidden;
   transform: translateX(-100%);
   transition: all 0.4s cubic-bezier(0.25, 0.1, 0.58, 1.01);
 }
@@ -436,8 +436,7 @@ button {
 
 .ui-tabs .ui-tabs-panel,
 .ui-tabs,
-.ui-tabs .ui-tabs-nav .ui-tabs-anchor,
-.ui-tabs .ui-tabs-nav {
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
   padding: 0;
 }
 
@@ -451,7 +450,7 @@ button {
 }
 
 .ui-tabs .ui-tabs-nav {
-  margin-bottom: 45px;
+  margin-bottom: 70px;
 }
 
 .ui-helper-clearfix:before,
@@ -885,7 +884,6 @@ question-point_heading {
 }
 
 .footer-form_bottom-checkbox {
-  margin-bottom: 16px;
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;
@@ -1049,6 +1047,8 @@ question-point_heading {
 
   .about-block_item-1 {
     margin-bottom: 45px;
+    margin-right: 0;
+    min-width: unset;
   }
 
   .about-block_item-more {
@@ -1136,6 +1136,63 @@ question-point_heading {
   }
 }
 
+/*адаптив 500*/
+@media (max-width: 500px) {
+  .image-container {
+    padding-right: 30px;
+    left: 30px;
+    top: 130px;
+  }
+
+  .image-description {
+    margin-bottom: 50px;
+  }
+
+  .image-btn {
+    padding: 15px 20px;
+    font-size: 20px;
+  }
+
+  .about-block_item-more {
+    padding: 20px 30px;
+  }
+
+  .about-block_item-more_desc {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .about-block_item-consult,
+  .about-block_item-improve {
+    padding: 20px 30px;
+    flex-wrap: wrap;
+  }
+
+  .how-consulting_desc_btn-1 {
+    margin-bottom: 20px;
+  }
+
+  .consult-pic,
+  .improve-pic {
+    margin: 0 auto 20px auto;
+  }
+
+  .heading-2 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  .footer-form_bottom-btn {
+    padding: 15px 20px;
+    width: 50%;
+  }
+
+  .footer-form_bottom-checkbox {
+    line-height: 20px;
+  }
+}
+
+/*адаптив 320*/
 @media (max-width: 320px) {
   .container {
     padding-left: 15px;

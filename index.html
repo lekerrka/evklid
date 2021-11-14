@@ -30,7 +30,7 @@
         <button class="burger-close"></button>
         <ul class="burger-nav_list">
           <li class="burger-nav_item">
-            <a href="#" class="burger-nav_link">О нас</a>
+            <a href="#about" class="burger-nav_link">О нас</a>
           </li>
           <li class="burger-nav_item">
             <a href="#" class="burger-nav_link">Проекты</a>
@@ -65,7 +65,7 @@
             <a tabindex="1" href="#" class="header-nav_link">Контакты</a>
           </li>
         </ul>
-        <button tabindex="1" class="header-search"></button>
+        <button aria-label="поиск" tabindex="1" class="header-search"></button>
       </nav>
     </div>
   </header>
@@ -113,7 +113,6 @@
         способствует повышению качества экспериментов.</p>
         <div class="about-block">
           <div class="about-block_item-1">
-            <img class="about-block_item-1_picture" src="img/about1.jpg" alt="">
             <div class="about-block_item-more">
               <p class="about-block_item-more_desc">Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.</p>
               <button tabindex="1" class="about-block_item-more_btn">Подробнее</button>
@@ -227,7 +226,7 @@
       <div class="container question-container">
         <h2 class="question-heading heading-2">Часто задаваемые вопросы</h2>
         <ul id="accordion">
-          <li tabindex="6" class="question-point">
+          <li role="button" tabindex="6" class="question-point">
             <div class="question-point_heading">
               <h3>Из чего формируется конечная стоимость проекта?</h3>
               <button class="question-point_btn"></button>
@@ -345,9 +344,9 @@
           </li>
         </ul>
         <div class="info_social">
-          <div tabindex="6" class="info_social-item fb"><a href=""></a></div>
-          <div tabindex="6" class="info_social-item vk"><a href=""></a></div>
-          <div tabindex="6" class="info_social-item inst"><a href=""></a></div>
+          <div tabindex="6" class="info_social-item fb"><a aria-label="фэйсбук" href="#"></a></div>
+          <div tabindex="6" class="info_social-item vk"><a aria-label="вконтакте" href="#"></a></div>
+          <div tabindex="6" class="info_social-item inst"><a aria-label="инстаграм" href="#"></a></div>
         </div>
       </div>
       <div class="form">
